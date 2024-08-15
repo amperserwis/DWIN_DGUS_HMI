@@ -242,7 +242,9 @@ bool DWIN::restartHMI_crc(bool wait_to_restart) {  // HEX(5A A5 09 82 00 04 55 a
   } 
 
   if (wait_to_restart) {
-      waitGUIstatusFree_crc(); 
+    while (waitGUIstatusFree_crc() == false) {
+      delay(10);
+    }
   }
   
   return verif_resp;
