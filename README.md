@@ -13,7 +13,8 @@ Supporting Features till date.
 - listenEvents()
 
 ----
-  ## Description and Additional Functions:
+  
+  ## Description and Additional Functions (Unofficial):
   
   - Enable Response Command Show:
   - - echoEnabled()
