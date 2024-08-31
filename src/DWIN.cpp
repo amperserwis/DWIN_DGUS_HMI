@@ -815,7 +815,7 @@ bool DWIN::setMultSeqVP_crc(long address, uint16_t *data, int data_size) {
       index += 2;
   }
 
-  byte sendBuffer[startCMD_size + dataCMD_size];
+  byte sendBuffer[startCMD_size + dataCMD_size] = {0};
   
   int sendBuffer_size = sizeof(sendBuffer);
 
