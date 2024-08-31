@@ -808,7 +808,7 @@ bool DWIN::setMultSeqVP_crc(long address, uint16_t *data, int data_size) {
   uint16_t index = 0;
   
   // Convert 16-bit data to 8-bit data
-  for (uint16_t i = 0; i < dataCMD_size; i++) {
+  for (uint16_t i = 0; i < data_size; i++) {
       dataCMD[index] = (byte)((data[i] >> 8) & 0xFF);
       dataCMD[index + 1] = (byte)((data[i]) & 0xFF);
       
